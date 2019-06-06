@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap and FontAwesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://nagoshiashumari.github.io/Rpg-Awesome/stylesheets/rpg-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Native CSS -->
+    <link rel="stylesheet" type="text/css" href="studywar.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>EC^3</title>
+  </head>
+  <body>
+  	<div class="container home">
+  		<div class="title">
+  			SysEducation
+  		</div>
+  		<div class="home-button fixed-bottom">
+  			<button class="btn" id="btnhome-teacher">Professor</button>
+  			<button class="btn" id="btnhome-student">Aluno</button>
+  		</div>
+  	</div>
+
+  	<div class="page1" id="page1">
+  		<button class="btn btn-code">
+  			Clique aqui para inserir o código
+  		</button>
+  	</div>
+
+  	<div class="page2" id="page2">
+  		<div class="resources">
+  			<div class="col coin">
+  				<i class="fas fa-coins"></i> 10000
+  			</div>
+  			<div class="col gem">
+  				<i class="far fa-gem"></i> 200
+  			</div>
+  		</div>
+  		<div class="character">
+  			<div class="col-6">
+  				1
+  			</div>
+  			<div class="col-6 stats">
+  				<ul>
+  					<li>Ataque: <span>10</span></li>
+  					<li>Agilidade: <span>4</span></li>
+  					<li>Resistência: <span>6</span></li>
+  					<li>Bloqueio: <span>8</span></li>
+  				</ul>
+  				<button class="btn btn-stats">
+  					Atributos
+  				</button>
+  				<button class="btn btn-equipments">
+  					Equipamentos
+  				</button>
+  			</div>
+  		</div>
+  		<div class="games">
+  			<div class="row gameline1">
+  				<div class="col-6">
+  					<button class="btn ranking-search">
+  						<i class="fas fa-trophy"></i><br>
+  						Ranking
+  					</button>
+  				</div>
+  				<div class="col-6">
+  					<button class="btn char-search">
+  						<i class="fas fa-search"></i><br>
+  						Procurar
+  					</button>
+  				</div>
+  			</div>
+  			<div class="row gameline2">
+  				<div class="col-6">
+  					<button class="btn attack-search">
+  						<i class="ra ra-crossed-swords"></i><br>
+  						Ataque
+  					</button>
+  				</div>
+  				<div class="col-6">
+  					<button class="btn challenger-search">
+  						<i class="fas fa-book"></i><br>
+  						Desafio
+  					</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  	<div class="page3" id="page3">
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="far fa-address-card"></i><br>
+  				Histórico de Aulas
+  			</button>
+  		</div>
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-user-shield"></i><br>
+  				Histórico de Batalha
+  			</button>
+  		</div>
+  	</div>
+
+  	<div class="row menu-footer fixed-bottom">
+		<div class="col">
+			<button class="btn" id="btn-page1"><i id="menu1" class="fas fa-home"></i></button>
+		</div>
+		<div class="col">
+			<button class="btn" id="btn-page2"><i id="menu2" class="fas fa-shield-alt"></i></button>
+		</div>
+		<div class="col">
+			<button class="btn" id="btn-page3"><i id="menu3" class="fas fa-clipboard-list"></i></button>
+		</div>
+  	</div>
+
+<!-- TEACHER PAGES -->
+
+  	<div class="page1-teacher" id="page1-teacher">
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-users"></i><br>
+  				Selecione a Turma
+  			</button>
+  		</div>
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-book-open"></i><br>
+  				Selecione a Disciplina
+  			</button>
+  		</div>
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-list-ol"></i><br>
+  				Selecione a Aula
+  			</button>
+  		</div>
+  	</div>
+
+  	<div class="page2-teacher" id="page2-teacher">
+  		<div class="row">
+  			<div class="col col-10">
+  				<button class="btn btn-report">
+	  				<i class="fas fa-users"></i><br>
+	  				Selecione a Turma
+	  			</button>
+  			</div>
+  			<div class="col col-2">
+  				<button class="btn btn-plus">
+	  				<i class="fas fa-plus"></i>
+	  			</button>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col col-10">
+  				<button class="btn btn-report">
+	  				<i class="fas fa-book-open"></i><br>
+	  				Selecione a Disciplina
+	  			</button>
+  			</div>
+  			<div class="col col-2">
+  				<button class="btn btn-plus">
+	  				<i class="fas fa-plus"></i>
+	  			</button>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-list-ol"></i><br>
+  				Criar Aula
+	  		</button>
+  		</div>
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="far fa-file"></i><br>
+  				Arquivo de Apresentação
+  			</button>
+  		</div>
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-plus"></i><br>
+  				Mais recursos
+  			</button>
+  		</div>
+  	</div>
+
+  	<div class="page3-teacher" id="page3-teacher">
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-trophy"></i><br>
+  				Ranking de Alunos
+  			</button>
+  		</div>
+  		<div class="row">
+  			<button class="btn btn-report">
+  				<i class="fas fa-search"></i><br>
+  				Procurar Aluno
+  			</button>
+  		</div>
+  	</div>
+
+
+  	<div class="row menu-footer-teacher fixed-bottom">
+		<div class="col">
+			<button class="btn" id="btn-page1-teacher"><i id="menu1-teacher" class="fas fa-home"></i></button>
+		</div>
+		<div class="col">
+			<button class="btn" id="btn-page2-teacher"><i id="menu2-teacher" class="fas fa-plus"></i></button>
+		</div>
+		<div class="col">
+			<button class="btn" id="btn-page3-teacher"><i id="menu3-teacher" class="fas fa-clipboard-list"></i></button>
+		</div>
+  	</div>
+    
+  </body>
+
+  <script>
+	$(document).ready(function(){
+
+		var orientationChange = function () {
+			var $element = $('body');
+			$element.css('height', '100%'); // Change this to your own original vh value.
+			$element.css('height', $element.height() + 'px');
+		};
+
+		var s = screen;
+		var o = s.orientation || s.msOrientation || s.mozOrientation;
+		o.addEventListener('change', function () {
+			setTimeout(function () {
+			orientationChange();
+			}, 250);
+			}, false);
+		orientationChange();
+
+
+		$("#btnhome-student").click(function(){
+			$(".home").toggle("slide");
+			$(".menu-footer").css('display','flex');
+			$("#menu1").css('color','#e1b12c');
+			$(".page1").toggle("slide");
+		});
+
+		$("#btn-page1").click(function(){
+			$("#menu1").css('color','#e1b12c');
+			$("#menu2").css('color','#f5f6fa');
+			$("#menu3").css('color','#f5f6fa');
+			$(".page1").css('display','block');
+			$(".page2").css('display','none');
+			$(".page3").css('display','none');
+		});
+
+		$("#btn-page2").click(function(){
+			$("#menu1").css('color','#f5f6fa');
+			$("#menu2").css('color','#e1b12c');
+			$("#menu3").css('color','#f5f6fa');
+			$(".page1").css('display','none');
+			$(".page2").css('display','block');
+			$(".page3").css('display','none');
+		});
+
+		$("#btn-page3").click(function(){
+			$("#menu1").css('color','#f5f6fa');
+			$("#menu2").css('color','#f5f6fa');
+			$("#menu3").css('color','#e1b12c');
+			$(".page1").css('display','none');
+			$(".page2").css('display','none');
+			$(".page3").css('display','block');
+		});
+
+
+
+		$("#btnhome-teacher").click(function(){
+			$(".home").toggle("slide");
+			$(".menu-footer-teacher").css('display','flex');
+			$("#menu1-teacher").css('color','#e1b12c');
+			$(".page1-teacher").toggle("slide");
+		});
+
+		$("#btn-page1-teacher").click(function(){
+			$("#menu1-teacher").css('color','#e1b12c');
+			$("#menu2-teacher").css('color','#f5f6fa');
+			$("#menu3-teacher").css('color','#f5f6fa');
+			$(".page1-teacher").css('display','block');
+			$(".page2-teacher").css('display','none');
+			$(".page3-teacher").css('display','none');
+		});
+
+		$("#btn-page2-teacher").click(function(){
+			$("#menu1-teacher").css('color','#f5f6fa');
+			$("#menu2-teacher").css('color','#e1b12c');
+			$("#menu3-teacher").css('color','#f5f6fa');
+			$(".page1-teacher").css('display','none');
+			$(".page2-teacher").css('display','block');
+			$(".page3-teacher").css('display','none');
+		});
+
+		$("#btn-page3-teacher").click(function(){
+			$("#menu1-teacher").css('color','#f5f6fa');
+			$("#menu2-teacher").css('color','#f5f6fa');
+			$("#menu3-teacher").css('color','#e1b12c');
+			$(".page1-teacher").css('display','none');
+			$(".page2-teacher").css('display','none');
+			$(".page3-teacher").css('display','block');
+		});
+
+	});
+  </script>
+</html>

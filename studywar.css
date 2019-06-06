@@ -1,0 +1,478 @@
+@font-face {
+  font-family: Metropolis-Bold;
+  src: url(font/Metropolis-Bold.otf);
+}
+
+@font-face {
+  font-family: Metropolis-Regular;
+  src: url(font/Metropolis-Regular.otf);
+}
+
+@font-face {
+  font-family: Metropolis-Thin;
+  src: url(font/Metropolis-Thin.otf);
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #2f3640 url('bgimage.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.home .title{
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	color: #f5f6fa;
+	font-size: 30px;
+}
+
+.home .home-button{
+	width: 100%;
+	text-align: center;
+	bottom: 10px;
+}
+
+.home .home-button button{
+	margin-top: 10px;
+	width: 80%;
+	height: 50px;
+	color: #2f3640;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+    font-family: Metropolis-Bold, sans-serif;
+    font-size: 25px;
+    border-width: 2px;
+}
+
+.home .home-button button:focus{
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;	
+	color: #dcdde1;
+    background-color: #2f3640;
+    border-color: #2f3640;
+}
+
+.menu-footer{
+	display: none;
+	height: 10%;
+	width: 100%;
+	background-color: #2f3640;
+	margin: 0;
+	text-align: center;
+}
+
+.menu-footer button{
+	width: 100%;
+	height: 100%;
+	background-color: #2f3640;
+	border-color: #2f3640;
+    color: #f5f6fa;
+    font-size: 36px;
+    padding: 0;
+}
+
+.menu-footer button:focus{
+	background-color: #2f3640;
+	border-color: #2f3640;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page1 {
+	height: 100%;
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 70px;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+}
+
+.page1 .btn-code{
+	width: 100%;
+	height: 100%;
+	background-color: #353b48;
+	border-color: #e1b12c;
+	border-width: 6px;
+	border-style: dashed;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 26px;
+	color: #e1b12c;
+}
+
+.page1 .btn-code:focus{
+	border-color: #e1b12c;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page2 {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+	flex-flow: column;
+}
+
+.page2 .resources {
+	width: 100%;
+	height: 4%;
+	background-color: #2f3640;
+	color: #e1b12c;
+	font-family: Metropolis-Bold, sans-serif;
+	text-align: center;
+	display: flex;
+}
+
+.page2 .resources .gem {
+	color: #00a8ff;
+}
+
+.page2 .character {
+	width: 100%;
+	height: 40%;
+	background-color: #353b48;
+	color: #f5f6fa;
+	font-family: Metropolis-Bold, sans-serif;
+	display: flex;
+	font-size: 16px;
+}
+
+.page2 .character .stats {
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.page2 .character ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.page2 .character ul span {
+	color: #e1b12c;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 18px;
+}
+
+.page2 .character .stats .btn-stats {
+	width: 90%;
+	height: 40px;
+	background-color: #e1b12c;
+	border-color: #e1b12c;
+	border-width: 3px;
+	color: #2f3640;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 16px;;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.page2 .character .stats .btn-stats:focus{
+	border-color: #e1b12c;
+	background-color: #2f3640;
+	color: #e1b12c; 
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page2 .character .stats .btn-equipments {
+	width: 90%;
+	height: 40px;
+	background-color: #e1b12c;
+	border-color: #e1b12c;
+	border-width: 3px;
+	color: #2f3640;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 16px;
+}
+
+.page2 .character .stats .btn-equipments:focus{
+	border-color: #e1b12c;
+	background-color: #2f3640;
+	color: #e1b12c; 
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page2 .games {
+	width: 100%;
+	height: 46%;
+	background-color: #353b48;
+	color: #f5f6fa;
+	text-align: center;
+}
+
+.page2 .games .row{
+	margin: 0;
+	height: 50%;
+}
+
+.page2 .games .row .col-6{
+	padding: 0;
+	padding: 10px;
+}
+
+.page2 .games .row .col-6 button{
+	width: 100%;
+	height: 100%;
+	background-color: #353b48;
+	border-color: #e1b12c;
+	border-width: 5px;
+	border-style: dashed;
+	color: #f5f6fa;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 16px;
+	margin-bottom: 6px;
+	padding-top: 13px;
+}
+
+.page2 .games .row .col-6 button:focus{
+	border-color: #353b48;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page2 .games .row .col-6 button i{
+	font-size: 50px;
+}
+
+.page3 {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+	padding: 10px;
+}
+
+.page3 .row{
+	width: 100%;
+	height: 45%;
+	margin: 0;
+}
+
+.page3 .row .btn-report{
+	width: 100%;
+	background-color: #353b48;
+	border-color: #e1b12c;
+	border-width: 6px;
+	border-style: dashed;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 26px;
+	color: #e1b12c;
+	margin-bottom: 10px;
+}
+
+.page3 .row .btn-report:focus{
+	border-color: #e1b12c;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page3 .row .btn-report i{
+	font-size: 14vh;
+}
+
+.menu-footer-teacher{
+	display: none;
+	height: 10%;
+	width: 100%;
+	background-color: #2f3640;
+	margin: 0;
+	text-align: center;
+}
+
+.menu-footer-teacher button{
+	width: 100%;
+	height: 100%;
+	background-color: #2f3640;
+	border-color: #2f3640;
+    color: #f5f6fa;
+    font-size: 36px;
+    padding: 0;
+}
+
+.menu-footer-teacher button:focus{
+	background-color: #2f3640;
+	border-color: #2f3640;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page1-teacher {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+	padding: 10px;
+}
+
+.page1-teacher .row{
+	width: 100%;
+	height: 30%;
+	margin: 0;
+}
+
+.page1-teacher .row .btn-report{
+	width: 100%;
+	background-color: #353b48;
+	border-color: #e1b12c;
+	border-width: 6px;
+	border-style: dashed;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 24px;
+	color: #e1b12c;
+	margin-bottom: 10px;
+}
+
+.page1-teacher .row .btn-report:focus{
+	border-color: #e1b12c;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page1-teacher .row .btn-report i{
+	font-size: 14vh;
+}
+
+.page2-teacher {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+	flex-flow: column;
+}
+
+.page2-teacher {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+	padding: 10px;
+}
+
+.page2-teacher .row{
+	width: 100%;
+	height: 18%;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.page2-teacher .row .btn-report{
+	width: 100%;
+	height: 100%;
+	background-color: #353b48;
+	border-color: #e1b12c;
+	border-width: 4px;
+	border-style: dashed;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 20px;
+	color: #e1b12c;
+}
+
+.page2-teacher .row .btn-report:focus{
+	border-color: #e1b12c;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page2-teacher .row .btn-report i{
+	font-size: 27px;
+}
+
+.page2-teacher .row .btn-plus{
+	width: 100%;
+	height: 100%;
+	background-color: #353b48;
+	border: none;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 30px;
+	color: #f5f6fa;
+}
+
+.page2-teacher .row .btn-plus:focus{
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page2-teacher .row .btn-plus i{
+	font-size: 20px;
+}
+
+.page2-teacher .row .col{
+	padding: 0;
+}
+
+.page3-teacher {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+	flex-flow: column;
+}
+
+.page3-teacher {
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #353b48;
+	margin: 0;
+	padding: 10px;
+}
+
+.page3-teacher .row{
+	width: 100%;
+	height: 45%;
+	margin: 0;
+}
+
+.page3-teacher .row .btn-report{
+	width: 100%;
+	background-color: #353b48;
+	border-color: #e1b12c;
+	border-width: 6px;
+	border-style: dashed;
+	text-align: center;
+	font-family: Metropolis-Bold, sans-serif;
+	font-size: 26px;
+	color: #e1b12c;
+	margin-bottom: 10px;
+}
+
+.page3-teacher .row .btn-report:focus{
+	border-color: #e1b12c;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page3-teacher .row .btn-report i{
+	font-size: 14vh;
+}
